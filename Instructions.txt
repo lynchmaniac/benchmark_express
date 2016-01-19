@@ -1,0 +1,7 @@
+D:\sqli\rest\ibp\code\services\ibp>npm start
+
+D:\>mongod --dbpath D:\sqli\rest\ibp\code\services\ibp\data
+
+D:\sqli\rest\ibp\code\services\nodetest1\data>mongo
+
+C:\Users\vpiard>http localhost:3000/artistes
