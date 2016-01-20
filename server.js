@@ -4,13 +4,11 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('mongodb://urgbovlr8lbrykv:CyOpq0zckGezBHw5PNHO@bdd8a1axxuhwyct-mongodb.services.clever-cloud.com:27017/bdd8a1axxuhwyct');
+var db = monk(process.argv[2]);
 
 var artistes = require('./routes/artistes');
 
 var app = express();
-
-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
