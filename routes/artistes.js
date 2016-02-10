@@ -43,10 +43,11 @@ router.get('/:id', function(req, res) {
       var json = JSON.stringify({ 
         artist: doc
       });
-      //res.send((err === null) ? { msg: '' } : { msg:'error: ' + err });
       res.setHeader('Content-Type', 'application/json');
       res.status(200);
-      res.send(json);
+      var ecart = new Date().getTime() - global.timeBegin.getTime();
+      res.send(json + " Ecart : " + ecart);
+
     });
 });
 

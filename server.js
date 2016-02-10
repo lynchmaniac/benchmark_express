@@ -16,8 +16,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Make our db accessible to our router
 app.use(function(req,res,next){
+     global.timeBegin = new Date();
      req.db = db;
      next();
+
 });
 
 
