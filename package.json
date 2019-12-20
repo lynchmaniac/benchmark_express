@@ -9,7 +9,7 @@
     "morgan": "~1.6.1",
     "serve-favicon": "~2.5.0",
     "monk": "https://github.com/vccabral/monk.git",
-    "mongodb": "~2.0.33"
+    "mongodb": "~3.4.1"
   },
   "peerDependencies": {
     "mongodb": ">= 1.4"
